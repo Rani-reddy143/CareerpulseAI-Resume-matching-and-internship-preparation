@@ -1,0 +1,57 @@
+1. Platform Architecture & Core Modules
+
+Milestone 1: Candidate Understanding & AI Resume Intelligence Engine
+
+Student Dashboard: Serves as the central hub showing profile completion score (currently 100%), quick status indicators, recommended actions, and direct links to secondary actions.
+
+My Profile Wizard: A 6-step candidate education and skills wizard designed to manually collect candidate background details.
+
+Resume Upload & AI Parse: Allows candidates to drag-and-drop resume documents (PDF/DOCX) for automated text extraction.
+
+Resume Intelligence Extracted: Displays structured skills (e.g., Python, Java, React.js, PyTorch, Docker) and parsed project/work experience parsed by the AI engine.
+
+Milestone 2: Recommendation & Analysis Engine
+
+Internship Matches: Recommends tailored internship roles by comparing the candidate's extracted profile skills against available job requirements.
+
+Skill Gap Analysis: Highlights missing technical and soft skills needed for target internship roles to help students bridge knowledge gaps.
+
+Milestone 3: Automated Application Materials
+
+Cover Letter Generator: Automatically generates custom cover letters tailored to specific job postings using candidate profile data.
+
+Milestone 4: Interview Preparation & Practice
+
+Interview Prep: Provides interactive, AI-driven technical mock interview drills and practice questions customized to target role requirements.
+
+Cross-Platform Assistant & Admin
+
+AI Career Assistant Live: A floating widget and dedicated module available across pages for real-time career coaching, query answering, and guidance.
+
+System Architecture Docs & Settings: Dedicated area for developers or system administrators to view system design notes and application configurations.
+
+2. Inferred Tech Stack
+
+Frontend UI Framework: React.js paired with TypeScript (running locally via Vite on localhost:5174).
+
+Styling & UI Components: Tailwind CSS (or similar utility-first framework) for responsive layouts, cards, and custom gradient button styling.
+
+Backend Framework: FastAPI (Python) or Node.js to handle file uploads, profile management, and async processing.
+
+AI / Parsing Engine: Python-based ML pipeline utilizing libraries like PyTorch, spaCy, or LLM APIs (e.g., OpenAI / Gemini API) for NLP-based resume extraction, skill tagging, and interactive chat assistant functionality.
+
+Database: PostgreSQL (for relational candidate data, job postings, and skill mappings).
+
+DevOps & Tooling: Docker (containerization) and Git for version control.
+
+3. User Navigation Flow
+
+Onboarding & Parsing: The student logs in and hits the Student Dashboard. They navigate to Upload Resume or My Profile Wizard to input background data.
+
+Profile Extraction: The system processes the document through the AI Parse Engine, rendering extracted skills and experience on the Resume Intelligence view.
+
+Job Matching & Gap Analysis: The candidate navigates to Internship Matches to review suited roles, then uses Skill Gap to see what additional skills (e.g., Docker, PostgreSQL) they need to build.
+
+Application & Preparation: The student uses Cover Letter to draft application materials and jumps to Interview Prep to perform mock technical drills before applying.
+
+Continuous Assistance: At any point, clicking the persistent Ask AI Career Assistant floating widget opens an interactive coaching overlay without disrupting navigation.
